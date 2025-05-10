@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/editor_toolbar"
+        android:layout_width="match_parent"
+        android:background="@color/baiqun"
+        android:layout_height="wrap_content"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/undo_button"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="15dp"
+                android:src="@drawable/ic_undo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                android:id="@+id/redo_button"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="15dp"
+                android:src="@drawable/ic_redo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                android:id="@+id/checkbox_button"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="15dp"
+                android:src="@drawable/ic_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                android:id="@+id/link_button"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="15dp"
+                android:src="@drawable/ic_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <jp.wasabeef.richeditor.RichEditor
+        android:id="@+id/editor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</LinearLayout>
